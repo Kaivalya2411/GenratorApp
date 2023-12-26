@@ -24,4 +24,4 @@ Things you may want to cover:
 * ...
 
 
-* new_branch_update readme file
+* new_branch_update readme file (Dropdown)
