@@ -1,0 +1,1289 @@
+current directory: /home/kaivalya/RubymineProjects/RubyPractice/GenratorApp/vendor/bundle/ruby/3.2.0/gems/sassc-1.1.2
+/home/kaivalya/.asdf/installs/ruby/3.2.2/bin/ruby -rrubygems /home/kaivalya/RubymineProjects/RubyPractice/GenratorApp/vendor/bundle/ruby/3.2.0/gems/rake-13.1.0/exe/rake RUBYARCHDIR\=/home/kaivalya/RubymineProjects/RubyPractice/GenratorApp/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux/3.2.0/sassc-1.1.2 RUBYLIBDIR\=/home/kaivalya/RubymineProjects/RubyPractice/GenratorApp/vendor/bundle/ruby/3.2.0/extensions/x86_64-linux/3.2.0/sassc-1.1.2
+make lib/libsass.so LDFLAGS="-Wall -O2"
+cd ext/libsass
+mkdir lib
+cc -Wall -O2 -fPIC -c -o cencode.o cencode.c
+g++ -Wall -O2 -std=c++0x -fPIC -c -o ast.o ast.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o base64vlq.o base64vlq.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o bind.o bind.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o constants.o constants.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o context.o context.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o contextualize.o contextualize.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o contextualize_eval.o contextualize_eval.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o cssize.o cssize.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o listize.o listize.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o error_handling.o error_handling.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o eval.o eval.cpp
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Function_Call*)’ at eval.cpp:616:84:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Function_Call*)’:
+eval.cpp:616:84: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  616 |         String_Constant *str = new (ctx.mem) String_Constant(c->pstate(), c->name());
+      |                                                                                    ^
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Function_Call*)’ at eval.cpp:617:66:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Function_Call*)’:
+eval.cpp:617:66: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  617 |         Arguments* new_args = new (ctx.mem) Arguments(c->pstate());
+      |                                                                  ^
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Function_Call*)’ at eval.cpp:618:61:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Function_Call*)’:
+eval.cpp:618:61: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  618 |         *new_args << new (ctx.mem) Argument(c->pstate(), str);
+      |                                                             ^
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Variable*)’ at eval.cpp:719:49:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Variable*)’:
+eval.cpp:719:49: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  719 |         value = new (ctx.mem) String_Quoted(*str);
+      |                                                 ^
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Variable*)’ at eval.cpp:722:86:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Variable*)’:
+eval.cpp:722:86: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  722 |           value = new (ctx.mem) String_Quoted(str->pstate(), str->perform(&to_string));
+      |                                                                                      ^
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Variable*)’ at eval.cpp:724:85:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Variable*)’:
+eval.cpp:724:85: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  724 |           value = new (ctx.mem) String_Constant(str->pstate(), unquote(str->value()));
+      |                                                                                     ^
+In file included from context.hpp:13,
+                 from eval.hpp:6,
+                 from eval.cpp:2:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Binary_Expression*)’ at eval.cpp:463:116:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+eval.cpp: In member function ‘virtual Sass::Expression* Sass::Eval::operator()(Sass::Binary_Expression*)’:
+eval.cpp:463:116: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  463 |       case Binary_Expression::LTE: return new (ctx.mem) Boolean(b->pstate(), lt(lhs, rhs, ctx) || eq(lhs, rhs, ctx));
+      |                                                                                                                    ^
+g++ -Wall -O2 -std=c++0x -fPIC -c -o expand.o expand.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o extend.o extend.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o file.o file.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o functions.o functions.cpp
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_length(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:805:20: warning: catching polymorphic type ‘class utf8::invalid_code_point’ by value [-Wcatch-value=]
+  805 |       catch (utf8::invalid_code_point) {
+      |                    ^~~~~~~~~~~~~~~~~~
+functions.cpp:809:20: warning: catching polymorphic type ‘class utf8::not_enough_room’ by value [-Wcatch-value=]
+  809 |       catch (utf8::not_enough_room) {
+      |                    ^~~~~~~~~~~~~~~
+functions.cpp:813:20: warning: catching polymorphic type ‘class utf8::invalid_utf8’ by value [-Wcatch-value=]
+  813 |       catch (utf8::invalid_utf8) {
+      |                    ^~~~~~~~~~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_insert(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:862:20: warning: catching polymorphic type ‘class utf8::invalid_code_point’ by value [-Wcatch-value=]
+  862 |       catch (utf8::invalid_code_point) {
+      |                    ^~~~~~~~~~~~~~~~~~
+functions.cpp:866:20: warning: catching polymorphic type ‘class utf8::not_enough_room’ by value [-Wcatch-value=]
+  866 |       catch (utf8::not_enough_room) {
+      |                    ^~~~~~~~~~~~~~~
+functions.cpp:870:20: warning: catching polymorphic type ‘class utf8::invalid_utf8’ by value [-Wcatch-value=]
+  870 |       catch (utf8::invalid_utf8) {
+      |                    ^~~~~~~~~~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:896:20: warning: catching polymorphic type ‘class utf8::invalid_code_point’ by value [-Wcatch-value=]
+  896 |       catch (utf8::invalid_code_point) {
+      |                    ^~~~~~~~~~~~~~~~~~
+functions.cpp:900:20: warning: catching polymorphic type ‘class utf8::not_enough_room’ by value [-Wcatch-value=]
+  900 |       catch (utf8::not_enough_room) {
+      |                    ^~~~~~~~~~~~~~~
+functions.cpp:904:20: warning: catching polymorphic type ‘class utf8::invalid_utf8’ by value [-Wcatch-value=]
+  904 |       catch (utf8::invalid_utf8) {
+      |                    ^~~~~~~~~~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_slice(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:943:20: warning: catching polymorphic type ‘class utf8::invalid_code_point’ by value [-Wcatch-value=]
+  943 |       catch (utf8::invalid_code_point) {
+      |                    ^~~~~~~~~~~~~~~~~~
+functions.cpp:947:20: warning: catching polymorphic type ‘class utf8::not_enough_room’ by value [-Wcatch-value=]
+  947 |       catch (utf8::not_enough_room) {
+      |                    ^~~~~~~~~~~~~~~
+functions.cpp:951:20: warning: catching polymorphic type ‘class utf8::invalid_utf8’ by value [-Wcatch-value=]
+  951 |       catch (utf8::invalid_utf8) {
+      |                    ^~~~~~~~~~~~
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Map* Sass::Functions::get_arg_m(const string&, Sass::Env&, Sass::Signature, Sass::ParserState, Sass::Backtrace*, Sass::Context&)’ at functions.cpp:100:74:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Map* Sass::Functions::get_arg_m(const string&, Sass::Env&, Sass::Signature, Sass::ParserState, Sass::Backtrace*, Sass::Context&)’:
+functions.cpp:100:74: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  100 |       if (lval && lval->length() == 0) return new (ctx.mem) Map(pstate, 0);
+      |                                                                          ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::adjust_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:610:69:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::adjust_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:610:69: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  610 |                                    color->a() + (a ? a->value() : 0));
+      |                                                                     ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::adjust_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:626:69:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::adjust_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:626:69: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  626 |                                    color->a() + (a ? a->value() : 0));
+      |                                                                     ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::scale_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:660:104:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::scale_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:660:104: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  660 |                                    color->a() + ascale * (ascale > 0.0 ? 1.0 - color->a() : color->a()));
+      |                                                                                                        ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::scale_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:680:104:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::scale_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:680:104: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  680 |                                    color->a() + ascale * (ascale > 0.0 ? 1.0 - color->a() : color->a()));
+      |                                                                                                        ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::change_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:710:92:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::change_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:710:92: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  710 |                                    a ? ARGR("$alpha", Number, 0, 255)->value() : color->a());
+      |                                                                                            ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::change_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:726:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::change_color(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:726:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  726 |                                    alpha);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::str_insert(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:875:55:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_insert(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:875:55: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  875 |       return new (ctx.mem) String_Constant(pstate, str);
+      |                                                       ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::str_index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:892:43:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:892:43: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  892 |           return new (ctx.mem) Null(pstate);
+      |                                           ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::str_index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:910:48:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:910:48: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  910 |       return new (ctx.mem) Number(pstate, index);
+      |                                                ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::str_slice(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:956:56:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::str_slice(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:956:56: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  956 |       return new (ctx.mem) String_Quoted(pstate, newstr);
+      |                                                        ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::feature_exists(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1457:51:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::feature_exists(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1457:51: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1457 |         return new (ctx.mem) Boolean(pstate, false);
+      |                                                   ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::map_get(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1278:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::map_get(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1278:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1278 |         return new (ctx.mem) Null(pstate);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::length(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1105:60:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::length(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1105:60: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1105 |                                     map ? map->length() : 1);
+      |                                                            ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::nth(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1122:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::nth(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1122:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1122 |         l = new (ctx.mem) List(pstate, 1);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::nth(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1132:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::nth(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1132:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1132 |         l = new (ctx.mem) List(pstate, 1);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::set_nth(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1149:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::set_nth(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1149:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1149 |         l = new (ctx.mem) List(pstate, 1);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1168:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1168:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1168 |         l = new (ctx.mem) List(pstate, 1);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1172:86:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1172:86: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1172 |         if (eq(l->value_at_index(i), v, ctx)) return new (ctx.mem) Number(pstate, i+1);
+      |                                                                                      ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1174:39:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::index(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1174:39: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1174 |       return new (ctx.mem) Null(pstate);
+      |                                       ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::join(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1185:42:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::join(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1185:42: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1185 |         l1 = new (ctx.mem) List(pstate, 1);
+      |                                          ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::join(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1190:42:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::join(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1190:42: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1190 |         l2 = new (ctx.mem) List(pstate, 1);
+      |                                          ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::append(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1211:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::append(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1211:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1211 |         l = new (ctx.mem) List(pstate, 1);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::list_separator(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1259:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::list_separator(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1259:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1259 |         l = new (ctx.mem) List(pstate, 1);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::random(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1090:56:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::random(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1090:56: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1090 |         return new (ctx.mem) Number(pstate, distributed);
+      |                                                        ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::comparable(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1396:71:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::comparable(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1396:71: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1396 |       return new (ctx.mem) Boolean(pstate, n1->unit() == tmp_n2.unit());
+      |                                                                       ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::saturate(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:424:108:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::saturate(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:424:108: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  424 |         return new (ctx.mem) String_Constant(pstate, "saturate(" + env["$color"]->perform(&to_string) + ")");
+      |                                                                                                            ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::invert(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:530:48:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::invert(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:530:48: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  530 |                                  rgb_color->a());
+      |                                                ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::alpha(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:549:100:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::alpha(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:549:100: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  549 |         return new (ctx.mem) String_Constant(pstate, "opacity(" + amount->perform(&to_string) + ")");
+      |                                                                                                    ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::alpha(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:552:68:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::alpha(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:552:68: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  552 |       return new (ctx.mem) Number(pstate, ARG("$color", Color)->a());
+      |                                                                    ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::sass_unquote(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:772:41:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::sass_unquote(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:772:41: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  772 |         return new (ctx.mem) Null(pstate);
+      |                                         ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::sass_unquote(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:775:95:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::sass_unquote(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:775:95: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  775 |         String_Constant* result = new (ctx.mem) String_Constant(pstate, string_quoted->value());
+      |                                                                                               ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::sass_unquote(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:781:93:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::sass_unquote(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:781:93: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  781 |       return new (ctx.mem) String_Constant(pstate, unquote(string(arg->perform(&to_string))));
+      |                                                                                             ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::type_of(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1372:63:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::type_of(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1372:63: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1372 |           return new (ctx.mem) String_Constant(pstate, "color");
+      |                                                               ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::inspect(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1537:60:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::inspect(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1537:60: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1537 |         return new (ctx.mem) String_Constant(pstate, "null");
+      |                                                            ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::inspect(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1539:61:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::inspect(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1539:61: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1539 |         return new (ctx.mem) String_Constant(pstate, "false");
+      |                                                             ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::call(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1468:61:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::call(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1468:61: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1468 |       List* arglist = new (ctx.mem) List(*ARG("$args", List));
+      |                                                             ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::call(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1470:55:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::call(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1470:55: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1470 |       Arguments* args = new (ctx.mem) Arguments(pstate);
+      |                                                       ^
+In file included from environment.hpp:10,
+                 from functions.hpp:7,
+                 from functions.cpp:1:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Functions::call(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’ at functions.cpp:1484:75:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+functions.cpp: In function ‘Sass::Expression* Sass::Functions::call(Sass::Env&, Sass::Env&, Sass::Context&, Sass::Signature, Sass::ParserState, Sass::Backtrace*)’:
+functions.cpp:1484:75: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1484 |       Function_Call* func = new (ctx.mem) Function_Call(pstate, name, args);
+      |                                                                           ^
+g++ -Wall -O2 -std=c++0x -fPIC -c -o inspect.o inspect.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o lexer.o lexer.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o node.o node.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o json.o json.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o emitter.o emitter.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o output.o output.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o parser.o parser.cpp
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_factor()’ at parser.cpp:1269:91:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_factor()’:
+parser.cpp:1269:91: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1269 |       return new (ctx.mem) Unary_Expression(pstate, Unary_Expression::PLUS, parse_factor());
+      |                                                                                           ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_factor()’ at parser.cpp:1272:92:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_factor()’:
+parser.cpp:1272:92: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1272 |       return new (ctx.mem) Unary_Expression(pstate, Unary_Expression::MINUS, parse_factor());
+      |                                                                                            ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_factor()’ at parser.cpp:1275:90:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_factor()’:
+parser.cpp:1275:90: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1275 |       return new (ctx.mem) Unary_Expression(pstate, Unary_Expression::NOT, parse_factor());
+      |                                                                                          ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_factor()’ at parser.cpp:1279:91:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_factor()’:
+parser.cpp:1279:91: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1279 |       return new (ctx.mem) Unary_Expression(pstate, Unary_Expression::MINUS, parse_value());
+      |                                                                                           ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Attribute_Selector* Sass::Parser::parse_attribute_selector()’ at parser.cpp:780:53:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Attribute_Selector* Sass::Parser::parse_attribute_selector()’:
+parser.cpp:780:53: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  780 |       value = new (ctx.mem) String_Constant(p, lexed);
+      |                                                     ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Attribute_Selector* Sass::Parser::parse_attribute_selector()’ at parser.cpp:790:68:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Attribute_Selector* Sass::Parser::parse_attribute_selector()’:
+parser.cpp:790:68: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  790 |     return new (ctx.mem) Attribute_Selector(p, name, matcher, value);
+      |                                                                    ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_simple_selector()’ at parser.cpp:662:64:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_simple_selector()’:
+parser.cpp:662:64: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  662 |       return new (ctx.mem) Type_Selector(pstate, unquote(lexed));
+      |                                                                ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_simple_selector()’ at parser.cpp:665:55:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_simple_selector()’:
+parser.cpp:665:55: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  665 |       return new (ctx.mem) Type_Selector(pstate, lexed);
+      |                                                       ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_simple_selector()’ at parser.cpp:677:92:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_simple_selector()’:
+parser.cpp:677:92: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  677 |       Selector_Placeholder* sel = new (ctx.mem) Selector_Placeholder(pstate, unquote(lexed));
+      |                                                                                            ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Compound_Selector* Sass::Parser::parse_simple_selector_sequence()’ at parser.cpp:628:67:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Compound_Selector* Sass::Parser::parse_simple_selector_sequence()’:
+parser.cpp:628:67: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  628 |       (*seq) << new (ctx.mem) Type_Selector(pstate, unquote(lexed));
+      |                                                                   ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Compound_Selector* Sass::Parser::parse_simple_selector_sequence()’ at parser.cpp:631:58:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Compound_Selector* Sass::Parser::parse_simple_selector_sequence()’:
+parser.cpp:631:58: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  631 |       (*seq) << new (ctx.mem) Type_Selector(pstate, lexed);
+      |                                                          ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:712:73:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:712:73: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  712 |         String_Constant* var_coef = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                                         ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:714:67:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:714:67: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  714 |         String_Constant* op = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                                   ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:717:73:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:717:73: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  717 |         String_Constant* constant = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                                         ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:719:65:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:719:65: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  719 |         String_Schema* schema = new (ctx.mem) String_Schema(p, 3);
+      |                                                                 ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:731:52:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:731:52: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  731 |         expr = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                    ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:734:52:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:734:52: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  734 |         expr = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                    ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:738:52:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:738:52: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  738 |         expr = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                    ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:741:52:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:741:52: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  741 |         expr = new (ctx.mem) String_Quoted(p, lexed);
+      |                                                    ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:744:51:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:744:51: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  744 |         expr = new (ctx.mem) String_Constant(p, "");
+      |                                                   ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:753:57:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:753:57: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  753 |       return new (ctx.mem) Pseudo_Selector(p, name, expr);
+      |                                                         ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’ at parser.cpp:756:66:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Simple_Selector* Sass::Parser::parse_pseudo_selector()’:
+parser.cpp:756:66: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  756 |       return new (ctx.mem) Pseudo_Selector(pstate, unquote(lexed));
+      |                                                                  ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String* Sass::Parser::parse_ie_property()’ at parser.cpp:1421:117:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String* Sass::Parser::parse_ie_property()’:
+parser.cpp:1421:117: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1421 |       String_Constant* str_node = new (ctx.mem) String_Constant(pstate, normalize_wspace(string(str.begin, str.end)));
+      |                                                                                                                     ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String* Sass::Parser::parse_ie_keyword_arg()’ at parser.cpp:1474:121:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String* Sass::Parser::parse_ie_keyword_arg()’:
+parser.cpp:1474:121: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1474 |     else if (lex< number >()) *kwd_arg << new (ctx.mem) Textual(pstate, Textual::NUMBER, Util::normalize_decimals(lexed));
+      |                                                                                                                         ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String* Sass::Parser::parse_ie_keyword_arg()’ at parser.cpp:1476:60:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String* Sass::Parser::parse_ie_keyword_arg()’:
+parser.cpp:1476:60: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1476 |       *kwd_arg << new (ctx.mem) String_Quoted(pstate, lexed);
+      |                                                            ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’ at parser.cpp:1499:78:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’:
+parser.cpp:1499:78: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1499 |         (*schema) << new (ctx.mem) Textual(pstate, Textual::PERCENTAGE, lexed);
+      |                                                                              ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’ at parser.cpp:1502:77:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’:
+parser.cpp:1502:77: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1502 |         (*schema) << new (ctx.mem) Textual(pstate, Textual::DIMENSION, lexed);
+      |                                                                             ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’ at parser.cpp:1505:74:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’:
+parser.cpp:1505:74: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1505 |         (*schema) << new (ctx.mem) Textual(pstate, Textual::NUMBER, lexed);
+      |                                                                          ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’ at parser.cpp:1508:80:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’:
+parser.cpp:1508:80: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1508 |         (*schema) << new (ctx.mem) Textual(pstate, Textual::HEX, unquote(lexed));
+      |                                                                                ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’ at parser.cpp:1511:63:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’:
+parser.cpp:1511:63: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1511 |         (*schema) << new (ctx.mem) String_Quoted(pstate, lexed);
+      |                                                               ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’ at parser.cpp:1514:87:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String_Schema* Sass::Parser::parse_value_schema(const char*)’:
+parser.cpp:1514:87: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1514 |         (*schema) << new (ctx.mem) Variable(pstate, Util::normalize_underscores(lexed));
+      |                                                                                       ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1294:64:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1294:64: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1294 |     { return new (ctx.mem) String_Constant(pstate, "!important"); }
+      |                                                                ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1301:48:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1301:48: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1301 |     { return new (ctx.mem) Boolean(pstate, true); }
+      |                                                ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1304:49:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1304:49: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1304 |     { return new (ctx.mem) Boolean(pstate, false); }
+      |                                                 ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1307:39:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1307:39: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1307 |     { return new (ctx.mem) Null(pstate); }
+      |                                       ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1310:71:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1310:71: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1310 |       String_Constant* str = new (ctx.mem) String_Quoted(pstate, lexed);
+      |                                                                       ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1317:70:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1317:70: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1317 |     { return new (ctx.mem) Textual(pstate, Textual::PERCENTAGE, lexed); }
+      |                                                                      ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1321:63:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1321:63: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1321 |     { return new (ctx.mem) Textual(pstate, Textual::HEX, lexed); }
+      |                                                               ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1325:69:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1325:69: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1325 |     { return new (ctx.mem) Textual(pstate, Textual::DIMENSION, lexed); }
+      |                                                                     ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1328:66:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1328:66: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1328 |     { return new (ctx.mem) Textual(pstate, Textual::NUMBER, lexed); }
+      |                                                                  ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1334:79:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1334:79: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1334 |     { return new (ctx.mem) Variable(pstate, Util::normalize_underscores(lexed)); }
+      |                                                                               ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Expression* Sass::Parser::parse_value()’ at parser.cpp:1338:55:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Expression* Sass::Parser::parse_value()’:
+parser.cpp:1338:55: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1338 |     { return new (ctx.mem) String_Quoted(pstate, lexed); }
+      |                                                       ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::String* Sass::Parser::parse_identifier_schema()’ at parser.cpp:1593:88:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::String* Sass::Parser::parse_identifier_schema()’:
+parser.cpp:1593:88: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1593 |         if (i < end) (*schema) << new (ctx.mem) String_Quoted(pstate, string(i, id.end));
+      |                                                                                        ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Declaration* Sass::Parser::parse_declaration()’ at parser.cpp:971:55:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Declaration* Sass::Parser::parse_declaration()’:
+parser.cpp:971:55: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  971 |       prop = new (ctx.mem) String_Quoted(pstate, lexed);
+      |                                                       ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Block* Sass::Parser::parse_block()’ at parser.cpp:858:62:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Block* Sass::Parser::parse_block()’:
+parser.cpp:858:62: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  858 |         (*block) << new (ctx.mem) Return(pstate, parse_list());
+      |                                                              ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Block* Sass::Parser::parse_block()’ at parser.cpp:889:49:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Block* Sass::Parser::parse_block()’:
+parser.cpp:889:49: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  889 |         (*block) << new (ctx.mem) Content(pstate);
+      |                                                 ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Block* Sass::Parser::parse_block()’ at parser.cpp:904:59:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Block* Sass::Parser::parse_block()’:
+parser.cpp:904:59: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  904 |         (*block) << new (ctx.mem) Extension(pstate, target);
+      |                                                           ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Block* Sass::Parser::parse_block()’ at parser.cpp:948:88:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Block* Sass::Parser::parse_block()’:
+parser.cpp:948:88: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+  948 |             Propset* ps = new (ctx.mem) Propset(pstate, decl->property(), parse_block());
+      |                                                                                        ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::At_Root_Block* Sass::Parser::parse_at_root_block()’ at parser.cpp:1899:48:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::At_Root_Block* Sass::Parser::parse_at_root_block()’:
+parser.cpp:1899:48: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+ 1899 |       body = new (ctx.mem) Block(r->pstate(), 1);
+      |                                                ^
+In file included from context.hpp:13,
+                 from ast.hpp:35,
+                 from parser.hpp:8,
+                 from parser.cpp:4:
+In function ‘void operator delete(void*, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’,
+    inlined from ‘Sass::Block* Sass::Parser::parse()’ at parser.cpp:68:48:
+memory_manager.hpp:54:18: warning: ‘void operator delete(void*)’ called on pointer returned from a mismatched allocation function [-Wmismatched-new-delete]
+   54 |   operator delete(np);
+      |   ~~~~~~~~~~~~~~~^~~~
+parser.cpp: In member function ‘Sass::Block* Sass::Parser::parse()’:
+parser.cpp:68:48: note: returned from ‘void* operator new(size_t, Sass::Memory_Manager<T>&) [with T = Sass::AST_Node]’
+   68 |       Import* pre = new (ctx.mem) Import(pstate);
+      |                                                ^
+g++ -Wall -O2 -std=c++0x -fPIC -c -o plugins.o plugins.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o position.o position.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o prelexer.o prelexer.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o remove_placeholders.o remove_placeholders.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass.o sass.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass_util.o sass_util.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass_values.o sass_values.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass_context.o sass_context.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass_functions.o sass_functions.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass_interface.o sass_interface.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o sass2scss.o sass2scss.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o source_map.o source_map.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o to_c.o to_c.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o to_string.o to_string.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o units.o units.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o utf8_string.o utf8_string.cpp
+g++ -Wall -O2 -std=c++0x -fPIC -c -o util.o util.cpp
+g++ -shared -Wall -O2 -o lib/libsass.so cencode.o ast.o base64vlq.o bind.o constants.o context.o contextualize.o contextualize_eval.o cssize.o listize.o error_handling.o eval.o expand.o extend.o file.o functions.o inspect.o lexer.o node.o json.o emitter.o output.o parser.o plugins.o position.o prelexer.o remove_placeholders.o sass.o sass_util.o sass_values.o sass_context.o sass_functions.o sass_interface.o sass2scss.o source_map.o to_c.o to_string.o units.o utf8_string.o util.o -lstdc++ -lm -ldl
+cd /home/kaivalya/RubymineProjects/RubyPractice/GenratorApp/vendor/bundle/ruby/3.2.0/gems/sassc-1.1.2/

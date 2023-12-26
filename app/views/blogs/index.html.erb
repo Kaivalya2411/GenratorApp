@@ -1,0 +1,43 @@
+<!--<h1>Hi, <%#= current_user.first_name if current_user %></h1>-->
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Blogs</h1>
+
+<!--<div id="blogs">-->
+  <%# @blogs.each do |blog| %>
+    <%#= render blog %>
+<!--    <p>-->
+      <%#= link_to "Show this blog", blog %>
+<!--    </p>-->
+  <%# end %>
+<!--</div>-->
+
+<%= link_to "New blog", new_blog_path %>
+
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @blogs.each do |blog| %>
+    <tr>
+      <td><%= blog.title.upcase %></td>
+      <td><%= link_to 'Show', blog %></td>
+      <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+      <td><%= link_to 'create', new_blog_path(blog) %></td>
+      <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+      <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link to 'New_Blog', new_blog_path if logged_in?(:site_admin, :admin, :customer) %>

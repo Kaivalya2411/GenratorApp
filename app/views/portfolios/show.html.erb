@@ -1,0 +1,43 @@
+<p style="color: green"><%= notice %></p>
+
+<%#= @portfolio.inspect %>
+<!--<p><%#= @portfolio.title %></p>-->
+<!--<p><%#= @portfolio.subtitle %></p>-->
+<!--<p><%#= @portfolio.body %></p>-->
+<!--<p><%#= @portfolio.main_image %></p>-->
+<!--<p><%#= @portfolio.thumb_image %></p>-->
+
+<% unless current_user.is_a? GuestUser %>
+  <%= form_for @comment, url: '#' do |f| %>
+    <div>
+      <%= f.label :content %>
+      <%= f.text_field :content%>
+    </div>
+    <%= f.submit 'Post Comment'  %>
+  <% end %>
+<% end %>
+
+<!--<div class="comment-card">-->
+<!--  <div class="card">-->
+<!--    <div class="card-block">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-1">-->
+<!--        </div>-->
+<!--        <div class="col-md-11">-->
+          <%#= comment.content %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<%= render @portfolio %>
+
+<div>
+  <%= link_to "Edit this portfolio", edit_portfolio_path(@portfolio) %> |
+  <%= link_to "Back to portfolios", portfolios_path %>
+
+
+  <%= button_to "Delete Post", @portfolios, method: :delete, data: { confirm: 'Are you sure?'} %>
+  <%= button_to "Destroy this portfolio", @portfolio, method: :delete, data: { confirm: 'Are you sure?'} %>
+</div>

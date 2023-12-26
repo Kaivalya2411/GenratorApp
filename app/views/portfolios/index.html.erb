@@ -1,0 +1,41 @@
+<h1>Hi, <%= current_user.first_name if current_user %></h1>
+
+<%= sample_helper %>
+
+<p style="color: green"><%= notice %></p>
+
+<h2>Portfolio Items</h2>
+
+<%#= session.inspect %>
+
+<hr>
+
+<!--<div id="portfolios">-->
+  <%# @portfolios.each do |portfolio_item| %>
+  <%#= render portfolio_item %>
+<!--  <p>-->
+    <%#= link_to "Show this portfolio", portfolio_item %>
+<!--  </p>-->
+  <%# end %>
+<!--</div>-->
+
+<!--#in this we table name-->
+<% @portfolios.each do|portfolio_item|%>
+  <p><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></p>
+  <p><%= portfolio_item.subtitle %></p>
+  <p><%=portfolio_item.body %></p>
+
+  <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
+<!--  the unless is an alternative for if makes working more easy else which-->
+  <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) %>
+  <a href="/portfolios/<%=portfolio_item.id %>/edit">Second Edit</a>
+<% end %>
+
+<br>
+<a href="portfolios/new">Create New Item</a><br>
+<%#= link_to "Edit", edit_portfolio_path %>
+<%= link_to "New portfolio", new_portfolio_path %>
+
+<p><%= new_portfolio_path %></p>
+<%=link_to "create new Item", new_portfolio_url  %>
+<!--subdomain: 'my_subdomain'-->
