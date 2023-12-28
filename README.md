@@ -24,7 +24,4 @@ Things you may want to cover:
 * ...
 
 
-
-* new_branch_update readme file (button)
-* new_branch_update readme file (Dropdown)
-
+* new_branch_update readme file (button)t
